@@ -3,9 +3,9 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" 
   PolicySchemaVersion="0.3.0.0" 
-  TenantId="yourtenant.onmicrosoft.com" 
+  TenantId="ribpay.onmicrosoft.com" 
   PolicyId="B2C_1A_PH_SUSI" 
-  PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_PH_SUSI"
+  PublicPolicyUri="http://ribpay.onmicrosoft.com/B2C_1A_PH_SUSI"
 >
   <!-- for AppInsights, copy these to above
     DeploymentMode="Development" 
@@ -13,7 +13,7 @@
   -->
 
   <BasePolicy>
-    <TenantId>yourtenant.onmicrosoft.com</TenantId>
+    <TenantId>ribpay.onmicrosoft.com</TenantId>
     <PolicyId>B2C_1A_PH_TrustFrameworkLocalization</PolicyId>
   </BasePolicy>
 
@@ -55,8 +55,6 @@
         <UserHelpText>Phone Number</UserHelpText>
         <UserInputType>DropdownSingleSelect</UserInputType>
         <Restriction>
-          <Enumeration Text="Sweden(+46)" Value="SE" SelectByDefault="true"/>
-          <Enumeration Text="Norway(+47)" Value="NO" />
           <Enumeration Text="Albania(+355)" Value="AL" />
           <Enumeration Text="Algeria(+213)" Value="DZ" />
           <Enumeration Text="American Samoa(+1684)" Value="AS" />
@@ -85,6 +83,7 @@
           <Enumeration Text="Bonaire, Sint Eustatius and Saba(+599)" Value="BQ" />
           <Enumeration Text="Bosnia and Herzegovina(+387)" Value="BA" />
           <Enumeration Text="Botswana(+267)" Value="BW" />
+          <Enumeration Text="Bouvet Island(+47)" Value="BV" />
           <Enumeration Text="Brazil(+55)" Value="BR" />
           <Enumeration Text="British Virgin Islands (+1284)" Value="VG" />
           <Enumeration Text="Brunei Darussalam(+673)" Value="BN" />
@@ -108,15 +107,14 @@
           <Enumeration Text="Côte d'Ivoire(+225)" Value="CI" />
           <Enumeration Text="Croatia(+385)" Value="HR" />
           <Enumeration Text="Cuba(+53)" Value="CU" />
-          <Enumeration Text="Curaçao(+599)" Value="CZ" />
-          <Enumeration Text="Cyprus(+357)" Value="CW" />
+          <Enumeration Text="Curaçao(+599)" Value="CW" />
+          <Enumeration Text="Cyprus(+357)" Value="CY" />
           <Enumeration Text="Czech Republic(+420)" Value="CZ" />
           <Enumeration Text="Congo (+243)" Value="CD" />
           <Enumeration Text="Denmark(+45)" Value="DK" />
           <Enumeration Text="Djibouti(+253)" Value="DJ" />
           <Enumeration Text="Dominica(+1767)" Value="DM" />
           <Enumeration Text="Dominican Republic(+1)" Value="DO" />
-          <Enumeration Text="Timor-Leste(+670)" Value="TL" />
           <Enumeration Text="Ecuador(+593)" Value="EC" />
           <Enumeration Text="Egypt(+20)" Value="EG" />
           <Enumeration Text="El Salvador(+503)" Value="SV" />
@@ -143,6 +141,7 @@
           <Enumeration Text="Guadeloupe(+590)" Value="GP" />
           <Enumeration Text="Guam(+1671)" Value="GU" />
           <Enumeration Text="Guatemala(+502)" Value="GT" />
+          <Enumeration Text="Guernesey(+44)" Value="GG" />
           <Enumeration Text="Guinea(+224)" Value="GN" />
           <Enumeration Text="Guinea-Bissau(+245)" Value="GW" />
           <Enumeration Text="Guyana(+592)" Value="GY" />
@@ -164,6 +163,7 @@
           <Enumeration Text="Kazakhstan(+7)" Value="KZ" />
           <Enumeration Text="Kenya(+254)" Value="KE" />
           <Enumeration Text="Kiribati(+686)" Value="KI" />
+          <Enumeration Text="Korea, Republic of(+82)" Value="KR" />
           <Enumeration Text="Kuwait(+965)" Value="KW" />
           <Enumeration Text="Kyrgyzstan(+996)" Value="KG" />
           <Enumeration Text="Lao People's Democratic Republic(+856)" Value="LA" />
@@ -208,6 +208,7 @@
           <Enumeration Text="Nigeria(+234)" Value="NG" />
           <Enumeration Text="Niue(+683)" Value="NU" />
           <Enumeration Text="Korea, Democratic People's Republic of (North Korea)(+850)" Value="KP" />
+          <Enumeration Text="Norway(+47)" Value="NO" />
           <Enumeration Text="Oman(+968)" Value="OM" />
           <Enumeration Text="Pakistan(+92)" Value="PK" />
           <Enumeration Text="Palau(+680)" Value="PW" />
@@ -245,19 +246,21 @@
           <Enumeration Text="Solomon Islands(+677)" Value="SB" />
           <Enumeration Text="Somalia(+252)" Value="SO" />
           <Enumeration Text="South Africa(+27)" Value="ZA" />
-          <Enumeration Text="Korea, Republic of(+82)" Value="KR" />
+          <Enumeration Text="South Georgia and South Sandwich Islands(+500)" Value="GS" />
           <Enumeration Text="South Sudan(+211)" Value="SS" />
           <Enumeration Text="Spain(+34)" Value="ES" />
           <Enumeration Text="Sri Lanka(+94)" Value="LK" />
           <Enumeration Text="Sudan(+249)" Value="SD" />
           <Enumeration Text="Suriname(+597)" Value="SR" />
           <Enumeration Text="Swaziland(+268)" Value="SZ" />
+          <Enumeration Text="Sweden(+46)" Value="SE" />
           <Enumeration Text="Switzerland(+41)" Value="CH" />
           <Enumeration Text="Syrian Arab Republic(+963)" Value="SY" />
           <Enumeration Text="Taiwan, Province of China(+886)" Value="TW" />
           <Enumeration Text="Tajikistan(+992)" Value="TJ" />
           <Enumeration Text="Tanzania, United Republic of(+255)" Value="TZ" />
           <Enumeration Text="Thailand(+66)" Value="TH" />
+          <Enumeration Text="Timor-Leste(+670)" Value="TL" />
           <Enumeration Text="Togo(+228)" Value="TG" />
           <Enumeration Text="Tokelau(+690)" Value="TK" />
           <Enumeration Text="Tonga(+676)" Value="TO" />
@@ -441,6 +444,7 @@
           <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.SelfAssertedAttributeProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
           <Metadata>
             <Item Key="ContentDefinitionReferenceId">api.selfasserted</Item>
+            <Item Key="setting.showCancelButton">false</Item>
           </Metadata>
           <IncludeInSso>false</IncludeInSso>
           <InputClaims>
@@ -508,6 +512,8 @@
           <Metadata>
             <Item Key="ContentDefinitionReferenceId">api.phonefactor</Item>
             <Item Key="ManualPhoneNumberEntryAllowed">true</Item>
+            <Item Key="setting.authenticationMode">sms</Item>
+            <Item Key="setting.autodial">true</Item>
           </Metadata>
           <CryptographicKeys>
             <Key Id="issuer_secret" StorageReferenceId="B2C_1A_TokenSigningKeyContainer" />
@@ -642,10 +648,20 @@
   <RelyingParty>
     <DefaultUserJourney ReferenceId="PhoneSignInUp" />
     <UserJourneyBehaviors>
+      <!-- https://learn.microsoft.com/en-us/azure/active-directory-b2c/session-behavior?pivots=b2c-custom-policy#configure-a-relying-party-file
+        <SingleSignOn Scope="Tenant" KeepAliveInDays="30" />
+        <SessionExpiryType>Absolute</SessionExpiryType>
+        <SessionExpiryInSeconds>1200</SessionExpiryInSeconds>
+      -->
+      <ContentDefinitionParameters>
+        <Parameter Name="ui_locales">{Culture:RFC5646}</Parameter>
+      </ContentDefinitionParameters>
+      <!-- https://learn.microsoft.com/en-us/azure/active-directory-b2c/embedded-login?pivots=b2c-custom-policy#configure-your-policy -->
+      <JourneyFraming Enabled="true" Sources="https://login.ribpay.app https://ribpay.blob.core.windows.net https://ribpay.azurewebsites.net https://localhost:3000" />
     <!-- for AppInsight - add your key
       <JourneyInsights TelemetryEngine="ApplicationInsights" InstrumentationKey="...guid..." DeveloperMode="true" ClientEnabled="true" ServerEnabled="true" TelemetryVersion="1.0.0" /> 
     -->
-      <ScriptExecution>Allow</ScriptExecution>  
+      <ScriptExecution>Allow</ScriptExecution>
     </UserJourneyBehaviors>
     <TechnicalProfile Id="PolicyProfile">
       <DisplayName>PolicyProfile</DisplayName>
