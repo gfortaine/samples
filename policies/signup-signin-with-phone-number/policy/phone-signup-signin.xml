@@ -49,7 +49,7 @@
       <LocalizedResources Id="api.phonefactor.en">
         <LocalizedStrings>
           <!-- ALLOW-LIST — extend with the countries where your users are. -->
-          <LocalizedString ElementType="UxElement" StringId="countryList"><![CDATA[{"NO":"Norway","SE":"Sweden","DK":"Denmark","FI":"Finland","IS":"Iceland"}]]></LocalizedString>
+          <LocalizedString ElementType="UxElement" StringId="countryList"><![CDATA[{"NO":"Norway","SE":"Sweden","DK":"Denmark","FI":"Finland","IS":"Iceland","FO":"Faroe Islands","AX":"Åland Islands"}]]></LocalizedString>
         </LocalizedStrings>
       </LocalizedResources>
     </Localization>
